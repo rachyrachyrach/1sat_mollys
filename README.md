@@ -16,3 +16,6 @@ python3 -m venv .venv
 4. We will need a private key to your wallet.  I used the BSV_wallet script.  We need to make a local environment, Run ```export BSV_KEY=```
 
 5. test by running the script to print out your address. ```python3 1sat.py```
+
+6. Need to convert to hex.  Note used bsvlib https://github.com/gitzhou/bsvlib/blob/master/bsvlib/constants.py
+example OP_RESVERED = b'\xae
