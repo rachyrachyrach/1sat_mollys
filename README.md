@@ -19,3 +19,5 @@ python3 -m venv .venv
 
 6. Need to convert to hex.  Note used bsvlib https://github.com/gitzhou/bsvlib/blob/master/bsvlib/constants.py
 example OP_RESVERED = b'\xae
+
+7. we created op.py with all the stuff from bsvlib
