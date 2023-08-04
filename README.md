@@ -14,3 +14,5 @@ python3 -m venv .venv
 3. pip install git+https://github.com/Beryllium-Team/bitsv@add_key_beta
 
 4. We will need a private key to your wallet.  I used the BSV_wallet script.  We need to make a local environment, Run ```export BSV_KEY=```
+
+5. test by running the script to print out your address. ```python3 1sat.py```
