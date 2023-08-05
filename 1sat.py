@@ -17,10 +17,9 @@ for x in list_of_pushdata:
 #This shows what is in wallet
 print(my_key.get_unspents())
 
-txid = my_key.create_transaction(
+txid = my_key.send_op_return(
     outputs = [],
-    message = list_of_pushdata,
-    custom_pushdata = True)
+    list_of_pushdata = list_of_pushdata)
 
 #This prints out Public key to test
 print(my_key.address)
