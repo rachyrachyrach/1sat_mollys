@@ -14,7 +14,10 @@ list_of_pushdata = [
 for x in list_of_pushdata:
     print(type(x))
 
-txid = my_key.send(
+#This shows what is in wallet
+print(my_key.get_unspents())
+
+txid = my_key.create_transaction(
     outputs = [],
     message = list_of_pushdata,
     custom_pushdata = True)
@@ -22,8 +25,7 @@ txid = my_key.send(
 #This prints out Public key to test
 print(my_key.address)
 
-#This shows what is in wallet
-print(my_key.get_unspents())
+
 
 #Used to see the txid
 print(txid)
