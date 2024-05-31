@@ -3,6 +3,7 @@
 
 Welcome to the repository for creating [1SatOridinals](https://www.1satordinals.com) transactions using python. This is a test to create on 1satordinals 
 
+[Documentation for Inscribing](https://panda-wallet.gitbook.io/provider-api/ordinals/inscribe)
 
 ==============
 
