@@ -5,6 +5,10 @@ Welcome to the repository for creating [1SatOridinals](https://www.1satordinals.
 
 [Documentation for Inscribing](https://panda-wallet.gitbook.io/provider-api/ordinals/inscribe)
 
+Want to do the bare minium which is inscribing into the op_return
+https://docs.1satordinals.com/#inscribing-in-outputs
+
+
 ==============
 
 1. create virtual environment 
