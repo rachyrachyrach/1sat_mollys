@@ -1,1 +1,2 @@
 git+https://github.com/Beryllium-Team/bitsv@add_key_beta
+bsvlib

@@ -8,7 +8,7 @@ Welcome to the repository for creating [1SatOridinals](https://www.1satordinals.
 Want to do the bare minium which is inscribing into the op_return
 https://docs.1satordinals.com/#inscribing-in-outputs
 
-
+May try [bsvlib](https://github.com/gitzhou/bsvlib) instead of bitsv. 
 ==============
 
 1. create virtual environment 
