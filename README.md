@@ -10,18 +10,22 @@ Welcome to the repository for creating [1SatOridinals](https://www.1satordinals.
 1. create virtual environment 
 python3 -m venv .venv
 
-2. Create requiremnts.txt file
+2. Install your python libraires 
 
-3. pip install git+https://github.com/Beryllium-Team/bitsv@add_key_beta
+```
+python3 -m pip install -r requirements.txt
 
-4. We will need a private key to your wallet.  I used the [BSV_wallet](https://github.com/rachyrachyrach/bsv_wallet) script.  We need to make a local environment, Run ```export BSV_KEY="Your private key"```
+```
 
-5. test by running the script to print out your address. ```python3 1sat.py```
 
-6. Need to convert to hex.  Note used bsvlib https://github.com/gitzhou/bsvlib/blob/master/bsvlib/constants.py
+3. We will need a private key to your wallet.  I used the [BSV_wallet](https://github.com/rachyrachyrach/bsv_wallet) script.  We need to make a local environment, Run ```export BSV_KEY="Your private key"```
+
+4. test by running the script to print out your address. ```python3 1sat.py```
+
+5. Need to convert to hex.  Note used bsvlib https://github.com/gitzhou/bsvlib/blob/master/bsvlib/constants.py
 example OP_RESVERED = b'\xae
 
-7. we created op.py with all the stuff from bsvlib
+6. we created op.py with all the stuff from bsvlib
 
 =================
 
