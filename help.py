@@ -27,8 +27,8 @@ provider_token = init_provider()
 
 # Headers for the request
 headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {provider_token}"
+     "Content-Type": "application/json",
+     "Authorization": f"Bearer {provider_token}"
     }
 
 # Make the request to inscribe
