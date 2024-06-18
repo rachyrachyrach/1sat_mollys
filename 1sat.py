@@ -11,6 +11,11 @@ list_of_pushdata = [
     "text/plain".encode("utf-8"), OP.OP_0.value, "Mollys are coming".encode("utf-8"), OP.OP_ENDIF.value
     ]  # encode string to utf-8 encoded bytes]
 
+list_of_pushdata = [
+    OP.OP_DUP.value, OP.OP_HASH160.value, bytes.fromhex(hex_of_key), OP.OP_EQUALVERIFY.value, OP.OP_CHECKSIG.value, bytes.fromhex("6f7264"), OP.OP_1.value,
+    "text/plain".encode("utf-8"), OP.OP_0.value, "Mollys are coming".encode("utf-8"), OP.OP_ENDIF.value
+    ]  # encode string to utf-8 encoded bytes]
+
 for x in list_of_pushdata:
     print(type(x))
 
