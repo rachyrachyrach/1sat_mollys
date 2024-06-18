@@ -31,6 +31,33 @@ example OP_RESVERED = b'\xae
 
 6. we created op.py with all the stuff from bsvlib
 
+
+
+## The Error
+
+```
+
+python3 1sat.py
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+<class 'bytes'>
+[Unspent(amount=9336086, confirmations=1966, txid='8283faf1b0691862f7bfa9d6631d96004a5aef9e2215438c23ab0ed3be0075e8', txindex=2), Unspent(amount=218, confirmations=833, txid='25a5856c2a9dfa0ade6ec660477ed51e597be896b352b7b6d751d2af936322c9', txindex=0), Unspent(amount=436, confirmations=830, txid='e592d6a7f1b2f4cc02a3f8412fcbf93a03ce0d730e51d5c325b018e8e4272e95', txindex=0), Unspent(amount=100, confirmations=485, txid='11c6d866bc9182b3182624e5d5330142e1c740b6081ec680b9d8b020da228a2e', txindex=0), Unspent(amount=100, confirmations=485, txid='e4f20810ac14e222a16b3aff009484ecd60e582809e4ee8e8be894710a981414', txindex=0), Unspent(amount=100, confirmations=377, txid='3b6c239c210dda68257e2182fcccd436971b9ff987b6033f3176b19b4cb14a40', txindex=0), Unspent(amount=1000, confirmations=377, txid='1a996d1bb62f73cbcd3dc730a5750b0de6fbd5c49ed372d4b766465a38397cf4', txindex=0), Unspent(amount=100, confirmations=374, txid='70dfe23c112bc4a07d864044cf8758b0c13c6856dbe34f05afbcbeccd80f2531', txindex=0), Unspent(amount=100, confirmations=374, txid='afce2f634ba87117bbe51f8bc447c1188bb728480cc34a5ac86040cb39ab51fe', txindex=0), Unspent(amount=100, confirmations=374, txid='838136e945d432921d95bd72ed03a7afd216ba1af5d635d599404ecaf3cca595', txindex=0), Unspent(amount=100, confirmations=374, txid='b5edbd86454eb1eccd18426e799d546d8b1af813db148fa2d5447911cbad6912', txindex=0), Unspent(amount=100, confirmations=369, txid='3c50fb5f4b11ac31061852db0918fe7fb8dc1a0e0950bdae967f8e26be27593f', txindex=0), Unspent(amount=10, confirmations=273, txid='8007da03e5c52ce02cb2c94e93d2fa151deed9f2a466d1187818fb38bb9acba2', txindex=0), Unspent(amount=100, confirmations=273, txid='ea32be068f0f618bda7079c87cf20364e47557ef7720f7843e508abfad35f498', txindex=0), Unspent(amount=10, confirmations=264, txid='816045f0b2b16af1c80e00c7258d42ac48c0244c1fa5c190875df7cc11ecf646', txindex=0), Unspent(amount=100, confirmations=262, txid='9d203a48830e08dbe9cbedfa8f10ecf64db4fda1b8ff0dfb8ebea8514746a8d5', txindex=0), Unspent(amount=10, confirmations=261, txid='625222f0a6c24555584800da71f819ebc9884606c14de6441cc3d983c21c6492', txindex=0), Unspent(amount=100, confirmations=261, txid='29e14f315009cb6c67e56dc1e2b622eae4e5ecda51ad1cbe560e8d8865624436', txindex=0), Unspent(amount=100, confirmations=261, txid='0311bfce731251a95662c02ad341929c3b177640979ec4292ae8a51811259dc1', txindex=0), Unspent(amount=1000, confirmations=261, txid='9d61ecc4b2662ec0d4cbfd0945771e8da8974c5492b36a4b996fd1b0b630059e', txindex=0), Unspent(amount=100, confirmations=231, txid='9b904c676fb719cfa4b9b3d436e822f9815860795f27cc56de06c4dbc7c240f4', txindex=0), Unspent(amount=100, confirmations=174, txid='11cb8e756d7d0bbba487e3151f8cf4c59df67bca701f63809547ee60402bd645', txindex=0)]
+Traceback (most recent call last):
+  File "/Users/rachael/github/1sat_mollys/1sat.py", line 20, in <module>
+    txid = my_key.do_not_send_op_return(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PrivateKey' object has no attribute 'do_not_send_op_return'
+```
 =================
 
 Notes:
