@@ -5,3 +5,7 @@ db.sqlite3
 Pipfile*
 *.swp
 yours_wallet_keys.json
+.venv*
+venv
+*venv
+.venv/bin/activate
