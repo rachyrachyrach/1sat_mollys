@@ -23,7 +23,7 @@ for x in list_of_pushdata:
     print(type(x))
 
 #This shows what is in wallet
-print(my_key.get_unspents())
+#print(my_key.get_unspents())
 
 txid = my_key.send(
     outputs = [],
