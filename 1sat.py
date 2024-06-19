@@ -27,8 +27,8 @@ for x in list_of_pushdata:
 
 txid = my_key.send(
     outputs = [],
-    message = list_of_pushdata,
-    custom_pushdata = True)
+    message = list_of_pushdata)
+    #custom_pushdata = True)
     #list_of_pushdata = list_of_pushdata)
 
 #This prints out Public key to test
