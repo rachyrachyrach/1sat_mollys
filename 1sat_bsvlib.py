@@ -1,4 +1,5 @@
 import base58
+import hashlib
 from bsvlib import PrivateKey, script as bsv_script
 from os import environ
 
@@ -9,6 +10,12 @@ def wif_to_hex(wif: str) -> str:
     private_key_bytes = decoded[1:-1]
     # Convert to hex string
     return private_key_bytes.hex()
+
+def hash160(data: bytes) -> bytes:
+    sha256 = hashlib.sha256(data).digest()
+    ripemd160 = hashlib.new('ripemd160')
+    ripemd160.update(sha256)
+    return ripemd160.digest()
 
 # Load the private key from the environment variable
 bsv_key_wif = environ.get("BSV_KEY_WIF")  # export BSV_KEY_WIF="Your private key in WIF format"
@@ -24,9 +31,13 @@ try:
 except ValueError as e:
     raise ValueError(f"Invalid BSV_KEY_WIF value: {e}")
 
+# Get the public key and compute its hash160
+public_key_bytes = my_key.pubkey.serialize()
+public_key_hash160 = hash160(public_key_bytes).hex()
+
 # Construct the list of pushdata using bsvlib
 list_of_pushdata = [
-    "OP_IF", "6f7264", "OP_DUP", "OP_HASH160", my_key.hash160().hex(), "OP_EQUALVERIFY", "OP_CHECKSIG",
+    "OP_IF", "6f7264", "OP_DUP", "OP_HASH160", public_key_hash160, "OP_EQUALVERIFY", "OP_CHECKSIG",
     "OP_FALSE", "OP_1",
     "text/plain", "OP_0", "Mollys are coming", "OP_ENDIF"
 ]
