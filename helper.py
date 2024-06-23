@@ -1,5 +1,5 @@
 # This is a placeholder. Use the appropriate library for Bitcoin SV in Python.
-import bsv
+import bsvlib
 from base64 import b64decode
 
 class Utxo:

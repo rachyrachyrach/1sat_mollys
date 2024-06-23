@@ -31,7 +31,21 @@ example OP_RESVERED = b'\xae
 
 6. we created op.py with all the stuff from bsvlib
 
+## Notes
 
+We found out the python library bitsv automatically includes the op_return first. 
+
+Notes from Satchmo: 
+"It looks like this is being added to OP_RETURN instead of in the script (either the beginning or the end). The unexecuted op if wrapper has to come before op_return (and you don’t need to use op return at all unless you want to add additional metadata )"
+
+
+Zach mentioned using ChatGPT to have the javascript libary written.  The ```helper.py``` file is the result. 
+
+"“Can you rewrite this js helper library in Python?"
+
+https://x.com/developingzack/status/1803118585717616816?s=46&t=MlQ-5v3EU8bliohuL0GxHQ
+
+https://github.com/BitcoinSchema/js-1sat-ord
 
 ## The Error
 
