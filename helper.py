@@ -10,20 +10,20 @@ class Utxo:
         self.vout = vout
 
 def create_ordinal(utxo, ordinal_destination_address, payment_pk, change_address, sat_per_byte_fee, inscription):
-    """
-    Create a transaction to inscribe an ordinal.
     
-    Parameters:
-    - utxo: Utxo object
-    - ordinal_destination_address: str
-    - payment_pk: PrivateKey object
-    - change_address: str
-    - sat_per_byte_fee: int
-    - inscription: dict with keys 'dataB64' and 'contentType'
+    ###Create a transaction to inscribe an ordinal.
     
-    Returns:
-    - Transaction object
-    """
+    ###Parameters:
+    ###- utxo: Utxo object
+    ###- ordinal_destination_address: str
+    ###- payment_pk: PrivateKey object
+    ###- change_address: str
+    ###- sat_per_byte_fee: int
+    ###- inscription: dict with keys 'dataB64' and 'contentType'
+    
+    ###Returns:
+    ###- Transaction object
+
     # Decode the base64 inscription data
     data = b64decode(inscription['dataB64'])
     
