@@ -9,5 +9,9 @@ yours_wallet_keys.json
 venv
 *venv
 .venv/bin/activate
+inscribe.py 
+new.py
 test/*
 *test/*
+*image/*
+image/Duck.png
