@@ -41,9 +41,9 @@ Notes from Satchmo:
 
 Zach mentioned using ChatGPT to have the javascript libary written.  The ```helper.py``` file is the result. 
 
-"“Can you rewrite this js helper library in Python?"
+"I don’t do Python but I just dropped this prompt into ChatGPT4o and it looks like it worked 🤷‍♂️"
 
-https://x.com/developingzack/status/1803118585717616816?s=46&t=MlQ-5v3EU8bliohuL0GxHQ
+“Can you rewrite this js helper library in Python?"
 
 https://github.com/BitcoinSchema/js-1sat-ord
 
