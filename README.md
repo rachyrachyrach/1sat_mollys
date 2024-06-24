@@ -47,6 +47,9 @@ https://x.com/developingzack/status/1803118585717616816?s=46&t=MlQ-5v3EU8bliohuL
 
 https://github.com/BitcoinSchema/js-1sat-ord
 
+# Libraries
+Had to install ```pip3 install python-bitcoinlib``` for ```inscribe.py``` and ```new.py```
+
 ## The Error
 
 ```

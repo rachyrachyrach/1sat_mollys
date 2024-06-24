@@ -9,3 +9,5 @@ yours_wallet_keys.json
 venv
 *venv
 .venv/bin/activate
+test/*
+*test/*
